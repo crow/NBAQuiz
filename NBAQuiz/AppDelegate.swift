@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  NBAQuiz
-//
-//  Created by David Crow on 3/12/20.
 //  Copyright © 2020 Kayvon. All rights reserved.
-//
 
 import UIKit
 import CoreData
