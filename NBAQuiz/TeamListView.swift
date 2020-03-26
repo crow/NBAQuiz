@@ -13,6 +13,8 @@ struct TeamRow : View {
     }
 }
 
+
+// adding a comment
 struct TeamListView: View {
     var teams:[Team] = [
         Team(name:"Blazers", color:Color.red),
