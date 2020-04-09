@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   source_code.plist
+   NBAQuiz
+
+   Created by Kayvon Moradi on 4/7/20.
+   Copyright (c) 2020 Kayvon. All rights reserved.
+-->
+<plist version="1.0">
+    
+    
+    <dict>
+    <key>Which team did Paul Pierce play his final game for?</key>
+    <string>Los Angeles Clippers</string>
+    <key>Which team did Kobe Bryant score 81 points against?</key>
+    <string>Toronto Raptors</string>
+    <key>Who won the NBA Finals MVP for the Detroit Pistons in 2004?</key>
+    <string>Chauncey Billups</string>
+    <key>Who did the San Antonio Spurs beat to win their first NBA Championship?</key>
+    <string>New York Knicks</string>
+    </dict>
+    
+    
+    <dict>
+        <key>Which current coach did Allen Iverson disrespectfully step over in the 2001 NBA Finals?</key>
+        <string>Tyronne Lue</string>
+        <key>Which player scored 71 points on the final night of the regular season to pass Shaq for scoring title?</key>
+        <string>David Robinson</string>
+        <key>Which bust was selected above Kevin Durant in the NBA Draft?</key>
+        <string>Greg Oden</string>
+    </dict>
+</plist>
+
+
