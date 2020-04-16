@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>quizzes</key>
+	<array>
+		<dict>
+			<key>questions</key>
+			<array>
+				<dict>
+					<key>question</key>
+					<string>This is a another quiz question?</string>
+					<key>answer</key>
+					<string>Yes this is another quiz question but with a correct answer recorded from the user</string>
+					<key>correctAnswer</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>This is a quiz question?</string>
+					<key>answer</key>
+					<string>Yes this is a quiz question with an incorrect answer recorded from the user</string>
+					<key>correctAnswer</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>This is a question that has not been seen?</string>
+					<key>answer</key>
+					<string>Yes this has not been seen by the user so it&apos;s optional correctAnswer field is blank</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
