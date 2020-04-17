@@ -8,6 +8,9 @@ struct TeamRow : View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4, content: {
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("")
+            }
             Text(title).foregroundColor(color)
         })
     }
@@ -16,6 +19,7 @@ struct TeamRow : View {
 
 // adding a comment
 struct TeamListView: View {
+    @State private var showingAlert = false
     var teams:[Team] = [
         Team(name:"Atlanta Hawks", color:Color.red),
         Team(name:"Boston Celtics", color:Color.green),
@@ -52,6 +56,9 @@ struct TeamListView: View {
         List{
             ForEach(teams, id: \.name) {team in
                 TeamRow(title: team.name, color: team.color)
+            }
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("Are you sure you want to pick this quiz?")
             }
         }
     }
