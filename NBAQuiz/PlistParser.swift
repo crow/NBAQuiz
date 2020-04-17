@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 //  PlistParser.swift
 //  NBAQuiz
@@ -5,6 +6,9 @@
 //  Created by Kayvon Moradi on 4/16/20.
 //  Copyright © 2020 Kayvon. All rights reserved.
 //
+=======
+//  Copyright © 2020 Kayvon. All rights reserved.
+>>>>>>> 8de06628f396ad41c567bb920fc94607879067e1
 
 import UIKit
 
@@ -40,4 +44,7 @@ class PlistParser: NSObject {
         return nil
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8de06628f396ad41c567bb920fc94607879067e1
