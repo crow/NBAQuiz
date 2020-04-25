@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct homePage: View {
+struct HomePage: View {
     var body: some View {
         HStack {
             HStack {
@@ -34,8 +34,8 @@ struct homePage: View {
     }
 }
 
-struct homePage_Previews: PreviewProvider {
+struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        homePage()
+        HomePage()
     }
 }

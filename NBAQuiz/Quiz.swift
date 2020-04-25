@@ -4,4 +4,6 @@ import UIKit
 
 struct Quiz: Codable {
     let questions:[QuizQuestion]
+
 }
+

@@ -2,7 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD
     <key>quizzes</key>
     <array>
         <dict>
@@ -76,7 +75,6 @@
             </array>
         </dict>
     </array>
-=======
 	<key>quizzes</key>
 	<array>
 		<dict>
@@ -84,29 +82,91 @@
 			<array>
 				<dict>
 					<key>question</key>
-					<string>This is a another quiz question?</string>
+					<string>Which team did Paul Pierce play his final game for?</string>
 					<key>answer</key>
-					<string>Yes this is another quiz question but with a correct answer recorded from the user</string>
-					<key>correctAnswer</key>
-					<true/>
+					<string>Los Angeles Clippers</string>
+					<key>ID</key>
+					<integer>1</integer>
 				</dict>
 				<dict>
 					<key>question</key>
-					<string>This is a quiz question?</string>
+					<string>Which team did Kobe Bryant score 81 points against?</string>
 					<key>answer</key>
-					<string>Yes this is a quiz question with an incorrect answer recorded from the user</string>
-					<key>correctAnswer</key>
-					<false/>
+					<string>Toronto Raptors</string>
+					<key>ID</key>
+					<integer>2</integer>
 				</dict>
 				<dict>
 					<key>question</key>
-					<string>This is a question that has not been seen?</string>
+					<string>Who did the San Antonio Spurs beat to win their first NBA Championship?</string>
 					<key>answer</key>
-					<string>Yes this has not been seen by the user so it&apos;s optional correctAnswer field is blank</string>
+					<string>New York Knicks</string>
+					<key>ID</key>
+					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>Who won the NBA Finals MVP for the Detroit Pistons in 2004?</string>
+					<key>answer</key>
+					<string>Chauncey Billups</string>
+					<key>ID</key>
+					<integer>4</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>How many total championships do the Los Angeles Lakers have?</string>
+					<key>answer</key>
+					<string>16</string>
+					<key>ID</key>
+					<integer>5</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>questions</key>
+			<array>
+				<dict>
+					<key>question</key>
+					<string>Which current coach did Allen Iverson disrespectfully step over in the 2001 NBA Finals?</string>
+					<key>answer</key>
+					<string>Tyronne Lue</string>
+					<key>ID</key>
+					<integer>6</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>Which player scored 71 points on the final night of the regular season to pass Shaq for scoring title?</string>
+					<key>answer</key>
+					<string>David Robinson</string>
+					<key>ID</key>
+					<integer>7</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>Which of the following All-Stars was on &quot;Team LeBron&quot; in the 2018 All-Star Game?</string>
+					<key>answer</key>
+					<string>Demarcus Cousins</string>
+					<key>ID</key>
+					<integer>8</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>Which bust was selected above Kevin Durant in the NBA Draft?</string>
+					<key>answer</key>
+					<string>Greg Oden</string>
+					<key>ID</key>
+					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>question</key>
+					<string>How many championships did the Boston Celtics win in the 1960&apos;s?</string>
+					<key>answer</key>
+					<string>9</string>
+					<key>ID</key>
+					<integer>10</integer>
 				</dict>
 			</array>
 		</dict>
 	</array>
->>>>>>> 8de06628f396ad41c567bb920fc94607879067e1
 </dict>
 </plist>
