@@ -44,7 +44,7 @@ struct HomePage: View {
                 print("Edit button was tapped")
             }) {
                 HStack(spacing: 10) {
-                    Image(systemName: "pencil")
+                    Image(systemName: "􀈎")
                     Text("Edit"))
     }
 }
