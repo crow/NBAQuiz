@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PlayAgain: ViewModifier {
+struct PlayAgainModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding()

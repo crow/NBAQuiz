@@ -17,6 +17,13 @@ class ViewQuiz: ObservableObject {
 
     var questionsAsked = 0
     var correctAnswers = 0
+    
+    
+    
+//UI part
+    
+    
+    
 
     // Checking if the question has been asked before
     func getQuestion() {

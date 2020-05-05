@@ -14,8 +14,10 @@ import SwiftUI
 struct HomePage: View {
     var body: some View {
         HStack {
+            // Added a NavigationView to link the button to a new file
+            NavigationView {
             HStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination: TeamListView()) {
                 Text("Teams")
                     .foregroundColor(Color.black)
                     .lineLimit(nil)
@@ -36,6 +38,7 @@ struct HomePage: View {
                     .background(/*@START_MENU_TOKEN@*/Color.green/*@END_MENU_TOKEN@*/)
             }
         }
+        
         NavigationView {
         Text("Settings")
         .navigationBarTitle("Settings")
@@ -44,12 +47,13 @@ struct HomePage: View {
                 print("Edit button was tapped")
             }) {
                 HStack(spacing: 10) {
-                    Image(systemName: "􀈎")
-                    Text("Edit"))
+                    Image(systemName: "arrow.2.circlepath")
+                    Text("Edit")
+                    )
     }
 }
 
-struct HomePage_Previews: PreviewProvider {
+struct HomePage_Previews: PreviewProvider {)
     static var previews: some View {
         HomePage()
     }
@@ -57,3 +61,6 @@ struct HomePage_Previews: PreviewProvider {
 }
 
 
+}
+}
+}
