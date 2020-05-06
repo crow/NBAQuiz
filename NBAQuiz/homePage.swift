@@ -44,11 +44,11 @@ struct HomePage: View {
         .navigationBarTitle("Settings")
         .navigationBarItems(trailing:
             Button(action: {
-                print("Edit button was tapped")
+                print("Settings button was tapped")
             }) {
                 HStack(spacing: 10) {
                     Image(systemName: "arrow.2.circlepath")
-                    Text("Edit")
+                    Text("Settings")
                     )
     }
 }

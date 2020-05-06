@@ -22,6 +22,25 @@ class ViewQuiz: ObservableObject {
     
 //UI part
     
+    // private func reset() {
+            // QuizQuestion.questionsAsked = 0
+            // QuizQuestion.correctAnswers = 0
+            //QuizQuestion.getRandomQuestion()
+        // }
+        
+        // private func update() {
+            // if QuizQuestion.questionsAsked == 10 {
+               //  self.Result.toggle()
+            // } else {
+               //  loadNextRoundWithDelay(seconds: 1)
+        //    }
+      //  }
+        
+      //  private func loadNextRoundWithDelay(seconds: Double) {
+         //       self.textColor = .white
+         //       self.QuizQuestion.getRandomQuestion()
+         //   }
+      //  }
     
     
 
@@ -52,4 +71,4 @@ class ViewQuiz: ObservableObject {
         }
         return answer.text == question.answer.text
     }
-}
+

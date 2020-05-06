@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Result: View {
-    @State var isPresented: Bool
+    @Binding var isPresented: Bool
     
     var score: Int
     

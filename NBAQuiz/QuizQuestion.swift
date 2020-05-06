@@ -9,6 +9,9 @@ struct QuizQuestion: Codable {
     let answer:String
 }
 
+var questionsAsked = 0
+ var correctAnswers = 0
+
 
 //// Section 2
 //if let ques = UserDefaults.standard.data(forKey: "6") {
