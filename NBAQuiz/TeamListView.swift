@@ -16,8 +16,6 @@ struct TeamRow : View {
     }
 }
 
-
-// adding a comment
 struct TeamListView: View {
     @State private var showingAlert = false
     var teams:[TeamRow] = [
@@ -70,9 +68,6 @@ struct TeamListView: View {
                     .lineLimit(nil)
                     .padding(.all)
                 .frame(maxHeight: .infinity)
-            }
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Are you sure you want to pick this quiz?")
             }
         }
     }

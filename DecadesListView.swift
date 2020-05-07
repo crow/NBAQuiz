@@ -26,7 +26,6 @@ struct DecadesListView: View {
             ]
     var body: some View {
         List{
-
             ForEach(decades, id: \.self) {decade in
                 ZStack {
                     Button(action: {
