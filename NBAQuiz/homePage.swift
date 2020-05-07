@@ -42,25 +42,23 @@ struct HomePage: View {
         NavigationView {
         Text("Settings")
         .navigationBarTitle("Settings")
-        .navigationBarItems(trailing:
+
+            }        .navigationBarItems(trailing:
             Button(action: {
                 print("Settings button was tapped")
             }) {
                 HStack(spacing: 10) {
                     Image(systemName: "arrow.2.circlepath")
                     Text("Settings")
-                    )
+                }
+            })
+        }
     }
 }
 
-struct HomePage_Previews: PreviewProvider {)
+struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
         HomePage()
     }
 }
-}
 
-
-}
-}
-}

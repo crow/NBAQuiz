@@ -24,7 +24,7 @@ struct Result: View {
                     Text("correct")
                 }
                 
-                PlayAgain(isResultPresented: isPresented)
+                //PlayAgain(isResultPresented: isPresented)
             }
             .padding()
         }

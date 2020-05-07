@@ -13,7 +13,7 @@ class ViewQuiz: ObservableObject {
     private var questionsUsed = [QuizQuestion]()
     
     // Is this how to set the variable for currentQuestion?
-    @Published var currentQuestion = QuizQuestion(question: "", answer: answer(text: ""))
+    //@Published var currentQuestion = QuizQuestion(question: "", answer: answer(text: ""))
 
     var questionsAsked = 0
     var correctAnswers = 0
@@ -48,27 +48,28 @@ class ViewQuiz: ObservableObject {
     func getQuestion() {
         guard var random = questionsUsed.shuffled().first else { return }
 
-            if questionsUsed.isEmpty || !questionsUsed.contains(random) {
-                questionsUsed.append(random)
-                currentQuestion = [random]
-            } else {
-                for QuizQuestion in questionsUsed {
-                    while random == QuizQuestion {
-                        random = (QuizQuestion.shuffled() as AnyObject).first!
-                        questionsUsed.append(random)
-                        currentQuestion = [random]
-                    }
-                }
-            }
+//            if questionsUsed.isEmpty || !questionsUsed.contains(random) {
+//                questionsUsed.append(random)
+//                currentQuestion = [random]
+//            } else {
+//                for QuizQuestion in questionsUsed {
+//                    while random == QuizQuestion {
+//                        random = (QuizQuestion.shuffled() as AnyObject).first!
+//                        questionsUsed.append(random)
+//                        currentQuestion = [random]
+//                    }
+//                }
+//            }
     }
 
     // Is this how you check the answer?
-    func userAnswer (_ answer: answer, to question: question) -> Bool {
-        questionsAsked += 1
-        
-        if answer.text == answer.question.text {
-            correctAnswers += 1
-        }
-        return answer.text == question.answer.text
-    }
+//    func userAnswer (_ answer: answer, to question: question) -> Bool {
+//        questionsAsked += 1
+//
+//        if answer.text == answer.question.text {
+//            correctAnswers += 1
+//        }
+//        return answer.text == question.answer.text
+//    }
+}
 

@@ -18,19 +18,13 @@ struct Scores: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                ForEach(0...2) { number in
-
-                }
-            }
+            Text("hello")
+            }.navigationBarTitle(Text(Decades[correctAnswer]))
+//    .presentation($showAlert) {
+//            Alert(title: Text(alert), message: Text("Your score is now \(score)"), dismissButton: .default(Text("Continue")) {
+//                self.question()
+//                })
         }
-        .navigationBarTitle(Text(Decades[correctAnswer]))
-        .presentation($showAlert) {
-            Alert(title: Text(alert), message: Text("Your score is now \(score)"), dismissButton: .default(Text("Continue")) {
-                self.question()
-                })
-        }
-    }
 
     func decadeTap(_ tag: Int) {
         if tag == correctAnswer {
@@ -50,7 +44,7 @@ struct Scores: View {
     }
 }
 
-struct Scores: PreviewProvider {
+struct Scores_Previews: PreviewProvider {
     static var previews: some View {
         Scores()
     }
