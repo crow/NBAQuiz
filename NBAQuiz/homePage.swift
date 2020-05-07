@@ -1,14 +1,7 @@
-//
-//  home_page.swift
-//  NBAQuiz
-//
-//  Created by Kayvon Moradi on 4/5/20.
 //  Copyright © 2020 Kayvon. All rights reserved.
-//
-
 
 // Is any of this correct? The idea should be it should have a title on the front page, and then two buttons on the buttom of the page for "Teams" and "Decades"
-
+// 
 import SwiftUI
 
 struct HomePage: View {
