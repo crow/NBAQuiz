@@ -10,7 +10,6 @@ struct HomePage: View {
         HStack {
             // Added a NavigationView to link the button to a new file
             HStack {
-
                 GeometryReader { geo in
                     VStack(alignment: .center, spacing: 0, content: {
                         HStack {
