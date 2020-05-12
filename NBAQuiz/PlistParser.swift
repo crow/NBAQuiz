@@ -9,26 +9,35 @@ class PlistParser: NSObject {
     static let shared = PlistParser()
 
     // Keep a constant of the plist name as it appears in files
-    private let plistName = "Quizzes"
+    private let questionsPlist = "QuizQuestions"
+    private let answersPlist = "QuizAnswers"
 
     let plistURL: URL
 
     override init() {
-        plistURL = URL(fileURLWithPath: Bundle.main.path(forResource: plistName, ofType: "plist")!)
+        plistURL = URL(fileURLWithPath: Bundle.main.path(forResource: questionsPlist, ofType: "plist")!)
         super.init()
     }
 
+
     // This will return a nested QuizData object that you can inspect
-    func parseQuizData() -> QuizData? {
+    func parseQuizData() -> [String:QuizQuestion]? {
+        var plistData: [String:AnyObject] = [:]
+
         do {
-            let data = try Data(contentsOf: plistURL)
-            let decoder = PropertyListDecoder()
-            return try decoder.decode(QuizData.self, from: data)
+            let plistXML = try Data(contentsOf: plistURL)
+            var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+            do {
+                plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+            } catch {
+                print("Error reading plist: \(error), format: \(propertyListFormat)")
+            }
         } catch {
-            // Handle error
-            // Print something you'll see in console to indicate this failed
-            // you can use emojis
-            print(error)
+            print("error no upload")
+        }
+
+        for (key, value) in plistData {
+            
         }
 
         return nil

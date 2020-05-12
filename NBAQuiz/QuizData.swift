@@ -1,8 +1,16 @@
 //  Copyright © 2020 Kayvon. All rights reserved.
 
-import UIKit
+struct QuizAnswer {
+    let identifier:String
+    let answerContent:String
+}
 
-// Holds all the quiz data
-struct QuizData: Codable {
-    let quizzes:[Quiz]
+struct QuizQuestion {
+    let identifier:String
+    let questionContent:String
+    let associatedAnswer:String
+}
+
+struct QuizData {
+    
 }

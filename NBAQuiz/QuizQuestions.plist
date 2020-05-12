@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>q1</key>
+	<dict>
+		<key>answer</key>
+		<string>a2</string>
+		<key>questionString</key>
+		<string>This is a question</string>
+	</dict>
+	<key>q2</key>
+	<dict>
+		<key>answer</key>
+		<string>a1</string>
+		<key>questionString</key>
+		<string>Who&apos;s considered to be one of the best Chicago Bulls player of all time?</string>
+	</dict>
+	<key>q3</key>
+	<dict>
+		<key>answer</key>
+		<string>a3</string>
+		<key>questionString</key>
+		<string>This is another question</string>
+	</dict>
+</dict>
+</plist>
