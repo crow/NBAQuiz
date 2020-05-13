@@ -4,24 +4,24 @@
 <dict>
 	<key>q1</key>
 	<dict>
-		<key>answer</key>
-		<string>a2</string>
-		<key>questionString</key>
+		<key>content</key>
 		<string>This is a question</string>
+		<key>answerIdentifier</key>
+		<string>a2</string>
 	</dict>
 	<key>q2</key>
 	<dict>
-		<key>answer</key>
-		<string>a1</string>
-		<key>questionString</key>
+		<key>content</key>
 		<string>Who&apos;s considered to be one of the best Chicago Bulls player of all time?</string>
+		<key>answerIdentifier</key>
+		<string>a1</string>
 	</dict>
 	<key>q3</key>
 	<dict>
-		<key>answer</key>
-		<string>a3</string>
-		<key>questionString</key>
+		<key>content</key>
 		<string>This is another question</string>
+		<key>answerIdentifier</key>
+		<string>a3</string>
 	</dict>
 </dict>
 </plist>

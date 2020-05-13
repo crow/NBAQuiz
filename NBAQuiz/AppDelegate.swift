@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Figure out a good time to parse the quiz data, this is a decent place but you could parse it wherever you want before the user looks at the quizzes
-        PlistParser.shared.parseQuizData()
+        QuizManager.shared
 
         // Override point for customization after application launch.
         return true

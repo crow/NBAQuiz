@@ -33,7 +33,9 @@ struct DecadesListView: View {
                     }) {
                         Text("")
                     }.alert(isPresented: self.$showingAlert) {
-                        Alert(title: Text("Are you sure you want to choose \(decade.name)?"), message: Text("Time to start \(decade.name) quiz"), dismissButton: .default(Text("Choose another decade and try again")))
+                        Alert(title: <#T##Text#>, message: <#T##Text?#>, primaryButton: Button(action: {
+                            <#code#>
+                        }, label: <#T##() -> _#>), secondaryButton: <#T##Alert.Button#>)
                     }
                     DecadeRow(title: decade.name, color: decade.color)
                 }
