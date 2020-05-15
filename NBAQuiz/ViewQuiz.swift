@@ -9,8 +9,7 @@ struct ViewQuiz: View {
     
     var body: some View {
         ZStack {
-            Color(red: 5.0 / 200.0, green: 35.0 / 200.0, blue: 50.0 / 200.0)
-                .edgesIgnoringSafeArea(.all)
+            Color(.orange).opacity(0.2).edgesIgnoringSafeArea(.all)
             
             VStack {
                 // This is where the text of the question should appear
