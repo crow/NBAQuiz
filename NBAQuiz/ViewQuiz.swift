@@ -2,68 +2,67 @@
 
 import SwiftUI
 
-class ViewQuiz: ObservableObject {
-    // Making a variable to track whether or not the question has come up
-    private var questionsUsed = [QuizQuestion]()
+struct ViewQuiz: View {
+    @ObservedObject private var quizManager = QuizManager()
     
-    // Is this how to set the variable for currentQuestion?
-    //@Published var currentQuestion = QuizQuestion(question: "", answer: answer(text: ""))
+    @State private var showResult = false
+    
+    var body: some View {
+        ZStack {
+            Color(red: 5.0 / 200.0, green: 35.0 / 200.0, blue: 50.0 / 200.0)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                // This is where the text of the question should appear
+                Text(quizManager.quizQuestion.content)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .padding()
+                
+                Spacer()
+                
+                // Putting a space so that the question text would appear on top of the screen and the possible answers would appear on the bottom
+                
+                VStack {
+                    // This is where the array of decoy answers go
+                    ForEach(quizManager.quizQuestion.decoyAnswers) { answer in
+                        
+                        // Not sure how to make this part locate a1, a2, a3, etc. from QuizAnswers.plist
+                        QuizAnswers(answer: QuizQuestionAnswerIdentifierKey) {
+                            self.hasBeenCorrectlyAnswered = self.QuizManager.checkAnswer(answer, to: self.QuizManager.quizQuestion.content)
+                            self.updateResult()
+                        }
+                    }
+                    .padding()
+                }
+                
+                Spacer()
+            }
+            .padding()
+        }
+            // This should update a score and then show a popover of your result after the correct answer is answered
+        .popover(isPresented: self.$showResult) {
+            Result(isPresented: self.$showResult, score: self.quizManager.answerIdentifier)
+                .onDisappear {
+                    ()
+            }
+        }
 
-    var questionsAsked = 0
-    var correctAnswers = 0
-    
-    
-    
-//UI part
-    
-    // private func reset() {
-            // QuizQuestion.questionsAsked = 0
-            // QuizQuestion.correctAnswers = 0
-            //QuizQuestion.getRandomQuestion()
-        // }
-        
-        // private func update() {
-            // if QuizQuestion.questionsAsked == 10 {
-               //  self.Result.toggle()
-            // } else {
-               //  loadNextRoundWithDelay(seconds: 1)
-        //    }
-      //  }
-        
-      //  private func loadNextRoundWithDelay(seconds: Double) {
-         //       self.textColor = .white
-         //       self.QuizQuestion.getRandomQuestion()
-         //   }
-      //  }
-    
-    
-
-    // Checking if the question has been asked before
-    func getQuestion() {
-        guard var random = questionsUsed.shuffled().first else { return }
-
-//            if questionsUsed.isEmpty || !questionsUsed.contains(random) {
-//                questionsUsed.append(random)
-//                currentQuestion = [random]
-//            } else {
-//                for QuizQuestion in questionsUsed {
-//                    while random == QuizQuestion {
-//                        random = (QuizQuestion.shuffled() as AnyObject).first!
-//                        questionsUsed.append(random)
-//                        currentQuestion = [random]
-//                    }
-//                }
-//            }
     }
+    
 
-    // Is this how you check the answer?
-//    func userAnswer (_ answer: answer, to question: question) -> Bool {
-//        questionsAsked += 1
-//
-//        if answer.text == answer.question.text {
-//            correctAnswers += 1
-//        }
-//        return answer.text == question.answer.text
-//    }
+    // This should be how you go to the next round
+    private func nextQuestion(seconds: Double) {
+        // Is this part correct?
+        // DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            self.$quizManager.QuizQuestionContentKey.random()
+        }
+    }
 }
 
+struct ViewQuiz_Previews: PreviewProvider {
+    static var previews: some View {
+        ViewQuiz()
+    }
+}
