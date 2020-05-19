@@ -6,6 +6,8 @@ struct ViewQuiz: View {
     @ObservedObject private var quizManager = QuizManager()
     
     @State private var showResult = false
+    @State private var textColor = Color.white
+
     
     var body: some View {
         ZStack {
@@ -50,7 +52,17 @@ struct ViewQuiz: View {
 
     }
     
-
+    private func updateResult() {
+        textColor = hasBeenCorrectlyAnswered ? .blue : .black
+        // Trying to make this part show the result if you gussed the question wrong, otherwise go to the next question
+        if QuizManager.guessedIncorrectly {
+            self.showResult.toggle()
+        } else {
+            nextQuestion(seconds: 1.5)
+        }
+    }
+    
+    
     // This should be how you go to the next round
     private func nextQuestion(seconds: Double) {
         // Is this part correct?
@@ -58,7 +70,7 @@ struct ViewQuiz: View {
             self.$quizManager.QuizQuestionContentKey.random()
         }
     }
-}
+
 
 struct ViewQuiz_Previews: PreviewProvider {
     static var previews: some View {
