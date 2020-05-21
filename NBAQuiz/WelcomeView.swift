@@ -8,11 +8,15 @@ struct WelcomeView: View {
 
     let title = "Welcome to NBAQuiz"
     let description =
+        
+        // Still going to fix the finalized version of this text, but here's a start.
 """
-NBA quiz lets you test your NBA knowledge. Blah blah blah. blah blah blah. Blah blah blah. blah blah blah. Fill up some space with words to make this seem welcoming.
+NBA quiz is where you can test your knowlegde about all things NBA. Whether you grew up a Lakers fan, a Michael Jordan fan, or even a LeBron fan, this is where you can tesr your knoweldge to the limits.
 
-This can also include some really basic instructions or what to expect.
+In thw next screen, you're going to choose which kind of quiz you want to play. You will have the option to choose between questions separated by NBA decades or questions separated by NBA teams. Let the fun begin!
 """
+    
+
     let buttonTitle = "Start a quiz"
 
 

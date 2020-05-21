@@ -4,24 +4,30 @@
 <dict>
 	<key>q1</key>
 	<dict>
+		<key>decoyAnswers</key>
+		<array>
+			<string>a1</string>
+			<string>a2</string>
+			<string>a3</string>
+		</array>
 		<key>content</key>
-		<string>This is a question</string>
+		<string>Which team did Paul Pierce play his final game for?</string>
 		<key>answerIdentifier</key>
-		<string>a2</string>
+		<string>a4</string>
 	</dict>
 	<key>q2</key>
 	<dict>
 		<key>content</key>
-		<string>Who&apos;s considered to be one of the best Chicago Bulls player of all time?</string>
+		<string>Which team did Kobe Bryant score 81 points against?</string>
 		<key>answerIdentifier</key>
-		<string>a1</string>
+		<string>a5</string>
 	</dict>
 	<key>q3</key>
 	<dict>
 		<key>content</key>
-		<string>This is another question</string>
+		<string>Which bust was selected above Kevin Durant in the NBA Draft?</string>
 		<key>answerIdentifier</key>
-		<string>a3</string>
+		<string>a6</string>
 	</dict>
 </dict>
 </plist>
