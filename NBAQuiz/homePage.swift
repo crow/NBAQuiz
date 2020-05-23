@@ -13,6 +13,7 @@ struct HomePage: View {
                 GeometryReader { geo in
                     VStack(alignment: .center, spacing: 0, content: {
                         HStack {
+                            Image(systemName: "teamsss")
                             Spacer()
                             NavigationLink(destination: TeamListView()) {
                                 Text("Teams")
@@ -20,15 +21,16 @@ struct HomePage: View {
                                     .frame(width: geo.size.width * self.percentParentWidth, height: geo.size.height * self.percentParentHeight)
                                     .foregroundColor(Color.white)
                                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: geo.size.height * self.percentParentWidth)
-                                    .background(Color.blue)
+                                   // .background(Color.blue)
                                     .border(Color.black)
 
                             }
                             NavigationLink(destination: DecadesListView()) {
+                                Image(systemName: "Jordan")
                                 Text("Decades").font(.largeTitle).frame(width: geo.size.width * self.percentParentWidth, height: geo.size.height * self.percentParentHeight)
                                     .foregroundColor(Color.white)
                                     .border(Color.black)
-                                    .background(Color.green)
+                                  //  .background(Color.green)
                             }
                             Spacer()
                         }
