@@ -5,6 +5,7 @@ import SwiftUI
 struct DecadeRow : View {
     var title:String
     let color:Color
+    
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4, content: {
@@ -18,13 +19,12 @@ struct DecadesListView: View {
     @State private var showingQuiz = false
 
     var decades:[Decade] = [
-        Decade(name:"1960", color:Color.blue),
-        Decade(name:"1970", color:Color.red),
-        Decade(name:"1980", color:Color.green),
-        Decade(name:"1990", color:Color.black),
-        Decade(name:"2000", color:Color.orange),
-        Decade(name:"2010", color:Color.purple),
-        Decade(name:"2020", color:Color.red)
+        Decade(name:"1960", color:Color.blue, image: Image("Bill", bundle: Bundle.main)),
+        Decade(name:"1970", color:Color.red, image: Image("Kareem", bundle: Bundle.main)),
+        Decade(name:"1980", color:Color.green, image: Image("Magic", bundle: Bundle.main)),
+        Decade(name:"1990", color:Color.black, image: Image("Jordan", bundle: Bundle.main)),
+        Decade(name:"2000", color:Color.orange, image: Image("Kobe", bundle: Bundle.main)),
+        Decade(name:"2010", color:Color.purple, image: Image("KD", bundle: Bundle.main))
     ]
     var body: some View {
         ZStack {
@@ -36,6 +36,7 @@ struct DecadesListView: View {
                             self.showingAlert = true
                         }) {
                             Text("")
+
                         }
                         .alert(isPresented: self.$showingAlert) {
                             Alert(title: Text("Are you sure you want to choose \(decade.name)?"), message: Text("Time to start \(decade.name) quiz"), primaryButton: .default(Text("Start \(decade.name) quiz"), action: {
@@ -65,6 +66,7 @@ struct DecadesListView_Previews: PreviewProvider {
 struct Decade: Hashable {
     let name:String
     let color:Color
+    let image:Image
 }
 
 
