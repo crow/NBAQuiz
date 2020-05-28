@@ -2,6 +2,98 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>q15</key>
+	<dict>
+		<key>content</key>
+		<string>Who was the MVP in 1982?</string>
+		<key>answerIdentifier</key>
+		<string>a18</string>
+	</dict>
+	<key>q14</key>
+	<dict>
+		<key>content</key>
+		<string>Who was the MVP in 1981?</string>
+		<key>answerIdentifier</key>
+		<string>a17</string>
+	</dict>
+	<key>q13</key>
+	<dict>
+		<key>content</key>
+		<string>Which Hall of Famer retired in 1989?</string>
+		<key>answerIdentifier</key>
+		<string>a16</string>
+	</dict>
+	<key>q12</key>
+	<dict>
+		<key>content</key>
+		<string>What year did the &quot;Dream Team&quot; win gold?</string>
+		<key>answerIdentifier</key>
+		<string>a15</string>
+	</dict>
+	<key>q11</key>
+	<dict>
+		<key>content</key>
+		<string>Which two teams joined the NBA in 1995?</string>
+		<key>answerIdentifier</key>
+		<string>a14</string>
+	</dict>
+	<key>q10</key>
+	<dict>
+		<key>content</key>
+		<string>Who won the ROY award in 1997?</string>
+		<key>answerIdentifier</key>
+		<string>a13</string>
+	</dict>
+	<key>q9</key>
+	<dict>
+		<key>content</key>
+		<string>Who was Vince Carter traded for immediately upon the 1998 draft?</string>
+		<key>answerIdentifier</key>
+		<string>a12</string>
+	</dict>
+	<key>q8</key>
+	<dict>
+		<key>content</key>
+		<string>Who was the only team to beat Michael Jordan in a playoff series in the 90&apos;s?</string>
+		<key>answerIdentifier</key>
+		<string>a11</string>
+	</dict>
+	<key>q7</key>
+	<dict>
+		<key>content</key>
+		<string>Who led the Lakers in points in the 1996-1997 season?
+Who led the Lakers in points in the 1996-1997 season?
+</string>
+		<key>answerIdentifier</key>
+		<string>a10</string>
+	</dict>
+	<key>q6</key>
+	<dict>
+		<key>content</key>
+		<string>What Laker holds the record for the most total points in NBA finals?</string>
+		<key>answerIdentifier</key>
+		<string>a9</string>
+	</dict>
+	<key>q5</key>
+	<dict>
+		<key>content</key>
+		<string>What year was Earvin &quot;Magic&quot; Johnson drafted?</string>
+		<key>answerIdentifier</key>
+		<string>a8</string>
+	</dict>
+	<key>q4</key>
+	<dict>
+		<key>content</key>
+		<string>When were the LA Lakers first established as an NBA team?
+
+
+When were the LA Lakers first established? 
+
+
+</string>
+		<key>answerIdentifier</key>
+		<string>a7</string>
+	</dict>
 	<key>q1</key>
 	<dict>
 		<key>decoyAnswers</key>
